@@ -33,4 +33,14 @@ This project uses **Expected Goals (xG)** as input features to predict the outco
 ---
 
 ## 📂 File Structure
+├── app.py # Streamlit GUI app ├── PremierLeagueMatches.csv # Dataset used for model training ├── xg_modeltest.pkl # Trained Random Forest model ├── .gitignore # Common ignore patterns ├── Premier_League_Analysis.ipynb# Exploratory Data Analysis and model training notebook ├── model/ # Folder for model artifacts │ ├── xg_modeltest.pkl │ └── label_encodertest.pkl # (Not used in current version)
+
+
+---
+
+## 🚀 How to Run
+
+1. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
 

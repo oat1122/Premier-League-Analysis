@@ -36,11 +36,30 @@ This project uses **Expected Goals (xG)** as input features to predict the outco
 ├── app.py # Streamlit GUI app ├── PremierLeagueMatches.csv # Dataset used for model training ├── xg_modeltest.pkl # Trained Random Forest model ├── .gitignore # Common ignore patterns ├── Premier_League_Analysis.ipynb# Exploratory Data Analysis and model training notebook ├── model/ # Folder for model artifacts │ ├── xg_modeltest.pkl │ └── label_encodertest.pkl # (Not used in current version)
 
 
+
+---
+
+## 🧠 Model Details
+
+| Step                | Description                                |
+|---------------------|--------------------------------------------|
+| Model Type          | Random Forest Classifier                   |
+| Features            | `homeXG`, `awayXG`, `xG_diff`              |
+| Target Variable     | Match Result → `'H'`, `'A'`, or `'D'`      |
+| Metric              | Accuracy                                   |
+| Training Algorithm  | `RandomForestClassifier(n_estimators=200, max_depth=10)` |
+
 ---
 
 ## 🚀 How to Run
 
-1. **Install dependencies**:
+1. **Install dependencies**
    ```bash
-   pip install -r requirements.txt
+   pip install streamlit joblib scikit-learn numpy pandas
+2. **Run the Streamlit app**
+   ```bash
+   streamlit run app.py
+3. **Access in browser Open http://localhost:8501 in your browser.**
+   ```bash
+   http://localhost:8501
 
